@@ -30,11 +30,15 @@
 @import "~@ionic/angular/css/flex-utils.css";
 // @import '~fortawesome/fontawesome-free/css/all.min.css';
 .md body {
-    --ion-background-color: blue;
+    --ion-background-color: linear-gradient(#157eff, royalblue);
     --ion-item-background: none;
-    --ion-border-color: blue;
 }
 
 .header-md::after {
     width: 0;
+}
+
+ion-item {
+    --border-width: 0;
+    --inner-border-width: 0;
 }
