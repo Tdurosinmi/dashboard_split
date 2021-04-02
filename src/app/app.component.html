@@ -1,5 +1,5 @@
 <ion-split-pane contentId="main" when="lg">
-    <ion-menu contentId="main" style="background-color: blue;">
+    <ion-menu contentId="content">
         <ion-header>
             <div id="header">
                 <p align="center">
@@ -43,37 +43,36 @@
         </ion-content>
     </ion-menu>
 
-    <ion-router-outlet id="main" main style="background: blue;">
+    <ion-router-outlet id="main" main>
     </ion-router-outlet>
-    <!-- 
-    <ion-tabs>
-        <ion-tab-bar slot="bottom">
-            <ion-tab-button tab="dashboard">
-                <ion-icon name="home"></ion-icon>
-                <ion-label>DashBoard</ion-label>
-            </ion-tab-button>
+</ion-split-pane>
 
-    <ion-tab-button tab="provider">
-        <ion-icon name="bag-handle-outline"></ion-icon>
-        <ion-label>Providers</ion-label>
-    </ion-tab-button>
+<ion-tabs contentId="content">
+    <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="dashboard">
+            <ion-icon name="home"></ion-icon>
+            <ion-label>DashBoard</ion-label>
+        </ion-tab-button>
 
-    <ion-tab-button tab="bookings">
-        <ion-icon name="book-outline"></ion-icon>
-        <ion-label>Bookings</ion-label>
-    </ion-tab-button>
+        <ion-tab-button tab="provider">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <ion-label>Providers</ion-label>
+        </ion-tab-button>
 
-    <ion-tab-button tab="payment">
-        <ion-icon name="wallet-outline"></ion-icon>
-        <ion-label>Payement</ion-label>
-    </ion-tab-button>
+        <ion-tab-button tab="bookings">
+            <ion-icon name="book-outline"></ion-icon>
+            <ion-label>Bookings</ion-label>
+        </ion-tab-button>
 
+        <ion-tab-button tab="payment">
+            <ion-icon name="wallet-outline"></ion-icon>
+            <ion-label>Payement</ion-label>
+        </ion-tab-button>
 
-    <ion-tab-button tab="options">
-        <ion-icon name="options-outline"></ion-icon>
-        <ion-label>Options</ion-label>
-    </ion-tab-button>
+        <ion-tab-button tab="options">
+            <ion-icon name="options-outline"></ion-icon>
+            <ion-label>Options</ion-label>
+        </ion-tab-button>
 
     </ion-tab-bar>
-    </ion-tabs> -->
-</ion-split-pane>
+</ion-tabs>
