@@ -13,5 +13,29 @@ ion-img {
 }
 
 ion-menu {
-    background-color: blue;
+    background-color: black;
+}
+
+ion-item {
+    cursor: pointer;
+}
+
+ion-item:hover {
+    background-color: #ddd;
+    font-weight: bold;
+    opacity: 0.8;
+    color: black;
+    ion-icon {
+        color: black;
+    }
+}
+
+ion-tabs {
+    tab-size: 15%;
+    --ion-tab-bar-background: linear-gradient(#157eff, royalblue);
+    ion-tab-button {
+        color: white;
+        font-size: 7px;
+        width: 20%;
+    }
 }
